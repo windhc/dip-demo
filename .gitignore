@@ -26,6 +26,11 @@ hs_err_pid*
 .gradle
 out
 
+bazel-bin
+bazel-gson
+bazel-out
+bazel-testlogs
+
 lombok.config
 
 temp
