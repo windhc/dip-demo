@@ -33,6 +33,7 @@ bazel-testlogs
 bazel-gson
 bazel-guice
 bazel-thrift
+bazel-grpc
 
 lombok.config
 
