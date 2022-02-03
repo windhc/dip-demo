@@ -26,10 +26,12 @@ hs_err_pid*
 .gradle
 out
 
+.ijwb
 bazel-bin
-bazel-gson
 bazel-out
 bazel-testlogs
+bazel-gson
+bazel-guice
 
 lombok.config
 
