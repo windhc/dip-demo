@@ -1,5 +1,8 @@
 # dip-demo
 
+- IDEA需要安装bazel插件
+- 安装完插件，点击file -> import bazel project
+
 ## integrate
 集成示例
 
