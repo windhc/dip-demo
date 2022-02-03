@@ -34,6 +34,7 @@ bazel-gson
 bazel-guice
 bazel-thrift
 bazel-grpc
+bazel-indico-client
 
 lombok.config
 

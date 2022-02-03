@@ -19,15 +19,28 @@ bazel run gson
 ```
 
 ## indico client
+```
+cd gson
+bazel run indico
+```
 
-## dynamodb
+## thrift
+```
+cd thrift
+bazel run server
+bazel run client
+```
+
+## grpc
+```
+cd grpc
+bazel run server
+bazel run client
+```
+
+## aws-dynamodb
 
 ## aws-lambda
 
-## thrift
-
-## grpc
-
 ## aws-s3
-
 

@@ -1,0 +1,19 @@
+load("@rules_java//java:defs.bzl", "java_binary", "java_library")
+
+java_library(
+    name="java-maven-lib",
+    srcs = glob(["src/main/java/com/windhc/indico/*.java"]),
+    resources = [
+        "src/main/resources/config.properties",
+    ],
+    deps = [
+        "@maven//:com_indico_indico_client_java",
+        "@maven//:com_google_code_gson_gson"
+    ],
+)
+
+java_binary(
+    name = "indico",
+    main_class = "com.windhc.indico.Main",
+    runtime_deps=[":java-maven-lib"],
+)
