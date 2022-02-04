@@ -1,0 +1,15 @@
+load("@rules_java//java:defs.bzl", "java_binary", "java_library")
+
+java_library(
+    name="java-maven-lib",
+    srcs = glob(["src/main/java/com/windhc/pdf/*.java"]),
+    deps = [
+        "@maven//:org_apache_pdfbox_pdfbox"
+    ],
+)
+
+java_binary(
+    name = "pdf-to-image",
+    main_class = "com.windhc.pdf.Main",
+    runtime_deps=[":java-maven-lib"]
+)

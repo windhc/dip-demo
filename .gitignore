@@ -35,6 +35,7 @@ bazel-guice
 bazel-thrift
 bazel-grpc
 bazel-indico-client
+bazel-pdf-to-image
 bazel-aws-dynamodb
 bazel-aws-lambda
 bazel-aws-s3
