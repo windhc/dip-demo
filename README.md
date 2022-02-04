@@ -20,7 +20,7 @@ bazel run gson
 
 ## indico client
 ```
-cd gson
+cd indico-client
 bazel run indico
 ```
 
@@ -40,11 +40,19 @@ bazel run client
 
 ## aws-dynamodb
 ```
-cd gson
+cd aws-dynamodb
 bazel run dynamodb
 ```
 
 ## aws-lambda
+```
+cd aws-lambda
+bazel build //...
+```
 
 ## aws-s3
+```
+cd aws-s3
+bazel run s3
+```
 
