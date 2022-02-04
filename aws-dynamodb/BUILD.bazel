@@ -1,0 +1,18 @@
+load("@rules_java//java:defs.bzl", "java_binary", "java_library")
+
+java_library(
+    name="java-maven-lib",
+    srcs = glob(["src/main/java/com/windhc/dynamodb/*.java"]),
+    deps = [
+        "@maven//:com_amazonaws_aws_java_sdk",
+        "@maven//:com_amazonaws_aws_java_sdk_dynamodb",
+#        "@maven//:com_amazonaws_aws_java_sdk_core",
+        "@maven//:com_google_code_gson_gson"
+    ],
+)
+
+java_binary(
+    name = "dynamodb",
+    main_class = "com.windhc.dynamodb.Main",
+    runtime_deps=[":java-maven-lib"]
+)

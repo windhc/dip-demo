@@ -35,6 +35,7 @@ bazel-guice
 bazel-thrift
 bazel-grpc
 bazel-indico-client
+bazel-aws-dynamodb
 
 lombok.config
 

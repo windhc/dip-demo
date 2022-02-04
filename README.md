@@ -39,6 +39,10 @@ bazel run client
 ```
 
 ## aws-dynamodb
+```
+cd gson
+bazel run dynamodb
+```
 
 ## aws-lambda
 
